@@ -1,0 +1,40 @@
+{
+    "Maps": {
+        "Tokyo_2099_Spider_Islands": {
+            "mode": "Convoy",
+            "topography": [
+                "Extreme verticality",
+                "Long sightlines"
+            ],
+            "favored_archetype": "Dive / Hitscan"
+        }
+    },
+    "Team_Ups": {
+        "Symbiote_Bond": {
+            "activators": [
+                "Venom",
+                "Spider-Man",
+                "Peni_Parker"
+            ],
+            "effect": "Converts incoming damage to explosive AoE retaliation.",
+            "counter": "Attack from outside spike burst range; prioritize anti-heal."
+        }
+    },
+    "Heroes": {
+        "Venom": {
+            "role": "Vanguard",
+            "gm_winrate": "52.1%",
+            "team_ups": [
+                "Symbiote_Bond"
+            ]
+        },
+        "Spider-Man": {
+            "role": "Duelist",
+            "gm_winrate": "49.8%",
+            "team_ups": [
+                "Symbiote_Bond"
+            ]
+        }
+    },
+    "last_updated": "2026-03-12T13:43:59.241270"
+}
