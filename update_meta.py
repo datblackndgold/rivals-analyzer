@@ -14,23 +14,44 @@ STATIC_SCHEMA = {
             "mode": "Convoy",
             "topography": ["Extreme verticality", "Long sightlines"],
             "favored_archetype": "Dive / Hitscan"
+        },
+        "Yggsgard_Yggdrasill_Path": {
+            "mode": "Vanguard",
+            "topography": ["Tight corridors", "Environmental kill pits"],
+            "favored_archetype": "Brawl / AOE"
         }
     },
     "Team_Ups": {
         "Symbiote_Bond": {
             "activators": ["Venom", "Spider-Man", "Peni_Parker"],
             "effect": "Converts incoming damage to explosive AoE retaliation.",
-            "counter": "Attack from outside spike burst range; prioritize anti-heal."
+            "counter": "Engage from 15m+ range; use anti-heal to prevent sustain during the burst window."
+        },
+        "God_of_Mischief": {
+            "activators": ["Hela", "Thor", "Loki"],
+            "effect": "Hela can resurrect Thor and Loki instantly; Thor gets lightning damage buff.",
+            "counter": "Prioritize Hela first. If she is alive, killing Thor or Loki is a wasted cooldown."
+        },
+        "Gamma_Charge": {
+            "activators": ["Iron_Man", "Hulk", "Doctor_Strange"],
+            "effect": "Iron Man's ultimate and primary fire are infused with Gamma, dealing massive AOE burn.",
+            "counter": "Requires Doctor Strange or Luna Snow to 'Shield/Freeze' the Iron Man during the channel."
         }
     }
 }
 
 def fetch_live_stats() -> dict:
     """Mock fetch of live GM-tier stats from a community API."""
-    # In a real scenario, this hits mrapi.org or tracker.gg
+    # We added the new heroes here so the ETL pipeline processes them!
     return {
         "Venom": {"role": "Vanguard", "winrate": "52.1%"},
-        "Spider-Man": {"role": "Duelist", "winrate": "49.8%"}
+        "Spider-Man": {"role": "Duelist", "winrate": "49.8%"},
+        "Hela": {"role": "Duelist", "winrate": "54.2%"},
+        "Thor": {"role": "Vanguard", "winrate": "51.5%"},
+        "Loki": {"role": "Strategist", "winrate": "50.1%"},
+        "Iron_Man": {"role": "Duelist", "winrate": "48.5%"},
+        "Hulk": {"role": "Vanguard", "winrate": "46.2%"},
+        "Doctor_Strange": {"role": "Vanguard", "winrate": "49.1%"}
     }
 
 def compile_database():

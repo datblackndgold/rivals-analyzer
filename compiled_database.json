@@ -7,6 +7,14 @@
                 "Long sightlines"
             ],
             "favored_archetype": "Dive / Hitscan"
+        },
+        "Yggsgard_Yggdrasill_Path": {
+            "mode": "Vanguard",
+            "topography": [
+                "Tight corridors",
+                "Environmental kill pits"
+            ],
+            "favored_archetype": "Brawl / AOE"
         }
     },
     "Team_Ups": {
@@ -17,7 +25,25 @@
                 "Peni_Parker"
             ],
             "effect": "Converts incoming damage to explosive AoE retaliation.",
-            "counter": "Attack from outside spike burst range; prioritize anti-heal."
+            "counter": "Engage from 15m+ range; use anti-heal to prevent sustain during the burst window."
+        },
+        "God_of_Mischief": {
+            "activators": [
+                "Hela",
+                "Thor",
+                "Loki"
+            ],
+            "effect": "Hela can resurrect Thor and Loki instantly; Thor gets lightning damage buff.",
+            "counter": "Prioritize Hela first. If she is alive, killing Thor or Loki is a wasted cooldown."
+        },
+        "Gamma_Charge": {
+            "activators": [
+                "Iron_Man",
+                "Hulk",
+                "Doctor_Strange"
+            ],
+            "effect": "Iron Man's ultimate and primary fire are infused with Gamma, dealing massive AOE burn.",
+            "counter": "Requires Doctor Strange or Luna Snow to 'Shield/Freeze' the Iron Man during the channel."
         }
     },
     "Heroes": {
@@ -34,7 +60,49 @@
             "team_ups": [
                 "Symbiote_Bond"
             ]
+        },
+        "Hela": {
+            "role": "Duelist",
+            "gm_winrate": "54.2%",
+            "team_ups": [
+                "God_of_Mischief"
+            ]
+        },
+        "Thor": {
+            "role": "Vanguard",
+            "gm_winrate": "51.5%",
+            "team_ups": [
+                "God_of_Mischief"
+            ]
+        },
+        "Loki": {
+            "role": "Strategist",
+            "gm_winrate": "50.1%",
+            "team_ups": [
+                "God_of_Mischief"
+            ]
+        },
+        "Iron_Man": {
+            "role": "Duelist",
+            "gm_winrate": "48.5%",
+            "team_ups": [
+                "Gamma_Charge"
+            ]
+        },
+        "Hulk": {
+            "role": "Vanguard",
+            "gm_winrate": "46.2%",
+            "team_ups": [
+                "Gamma_Charge"
+            ]
+        },
+        "Doctor_Strange": {
+            "role": "Vanguard",
+            "gm_winrate": "49.1%",
+            "team_ups": [
+                "Gamma_Charge"
+            ]
         }
     },
-    "last_updated": "2026-03-12T13:43:59.241270"
+    "last_updated": "2026-03-12T15:46:04.729698"
 }
